@@ -9,6 +9,8 @@ let category=document.getElementById('category');
 let submit=document.getElementById('submit');
 let mood ='create';
 let tmp;
+let body=document.getElementById('tbody');
+let hh=document.getElementById('hh')
 
 //create total
 function gettotal()
@@ -253,6 +255,18 @@ function searchdata(value)
     };
     document.getElementById('tbody').innerHTML=tabel;
 
+}
+
+//dark/white mood
+function dark(){
+    document.body.style.backgroundColor='white';
+    document.body.style.color='black';
+    hh.innerHTML="Dark Mood";
+}
+function white(){
+    document.body.style.backgroundColor='#222';
+    document.body.style.color='white';
+    hh.innerHTML="White Mood";
 }
 
 showdata()
